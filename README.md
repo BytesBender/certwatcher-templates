@@ -6,7 +6,8 @@
 <img src="https://img.shields.io/twitter/follow/drfabiocastro?style=social&logo=twitter" alt="follow on Twitter"></a>
 </p>
 
-<p align="justify">
-This repository contains the templates for the Certwatcher project, a tool used to capture and track phishing sites. The templates are written in YAML and provide an easy way to customize and configure the Certwatcher tool. 
+<p align="center">
+This repository contains the templates for the Certwatcher project, a tool used to capture and track phishing sites. 
 </p>
 
+*The templates are written in YAML and provide an easy way to customize and configure the Certwatcher tool. By using these templates, security professionals and researchers can effectively monitor and detect suspicious activity on the web, helping to prevent phishing attacks and protect sensitive information. This repository is an essential resource for those looking to use Certwatcher in their work and stay ahead of the latest threats in the digital world.*
