@@ -1,0 +1,24 @@
+info:
+	id: fas-keywords-brazilian-crypto-brokers
+	name: Brazilian Crypto Brokers Keywords
+	author: Fábio Castro
+	description: List of Brazilian crypto brokers for keyword matching.
+	tags:
+
+		crypto
+		brokers
+		brazil
+		finance
+	references:
+
+		List of crypto brokers in Brazil
+		News articles about the crypto market in Brazil
+		Websites about trading and investing in cryptocurrencies
+	keywords:
+
+		- mercadobitcoin
+		- foxbit
+    
+	response:
+
+status_code: 200
