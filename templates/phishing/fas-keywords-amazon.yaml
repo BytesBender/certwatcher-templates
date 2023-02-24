@@ -1,0 +1,35 @@
+info:
+  id: fas-keywords-amazon
+  name: Amazon Phishing
+  author: Fábio Castro
+  description:
+    List of keywords and patterns commonly used in phishing sites related to Amazon AWS.
+
+  classification:
+    tags:
+      - service
+      - phishing
+
+  references:
+    - Reports on Financial Fraud from the Central Bank of Brazil
+
+  keywords:
+    - amazon
+
+  matchers-contidion: and
+
+  matchers:
+    - type: word
+      words:
+        - amazon
+    - type: pattern
+      patterns:
+        - '//*[@id="ap_email"]'
+        - '//*[@id="createAccountSubmit"]'
+  tlds:
+    - pattern: '(?:\\b\\w+\\.(?:me|online|com)\\b)'
+      type: url
+      description: Matches TLDs .online, .me
+    - pattern: '(?:\\b\\w+\\.(?:biz|net|work)\\b)'
+      type: url
+      description: Matches TLDs .de, .mx and .com
