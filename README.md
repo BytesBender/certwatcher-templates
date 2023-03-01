@@ -1,9 +1,19 @@
 <p align="center">
-<a href="#"><img src="https://img.shields.io/badge/contributors-1-green" alt=""></a>
-<a href="#"><img src="https://img.shields.io/badge/templates-stable-green" alt=""></a>
-<a href="#"><img src="https://img.shields.io/badge/version-v0.1.0-blue" alt=""></a>
-<a href="https://twitter.com/intent/follow?screen_name=drfabiocastro">
-<img src="https://img.shields.io/twitter/follow/drfabiocastro?style=social&logo=twitter" alt="follow on Twitter"></a>
+  <a href="#">
+    <img src="https://img.shields.io/github/contributors/drfabiocastro/certwatcher-templates" alt="contributors">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/github/stars/drfabiocastro/certwatcher-templates" alt="stars">
+  </a>
+ <a href="#">
+  <img src="https://img.shields.io/badge/development-active-yellow.svg" alt="development status">
+ </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/version-v0.1.0-blue" alt="version">
+  </a>
+  <a href="https://twitter.com/drfabiocastro">
+    <img src="https://img.shields.io/twitter/follow/drfabiocastro?style=social&logo=twitter" alt="follow on Twitter">
+  </a>
 </p>
 
 <p align="center">
