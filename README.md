@@ -1,4 +1,8 @@
 <p align="center">
+  <img width="120" height="auto" src="https://user-images.githubusercontent.com/110246050/222305639-7d263c1c-a7eb-45ac-b389-065f38c5e3fd.svg">
+</p>
+
+<p align="center">
   <a href="#">
     <img src="https://img.shields.io/github/contributors/drfabiocastro/certwatcher-templates" alt="contributors">
   </a>
