@@ -21,6 +21,7 @@ info:
     - login
     - account
     - amazon
+    - awsamazon
 
   matchers:
 
