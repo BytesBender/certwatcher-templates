@@ -10,7 +10,7 @@ info:
       - phishing
 
   references:
-    - Amazon reports on financial fraud
+    - Amazon reports
 
   matchers-condition: and
 
@@ -19,8 +19,8 @@ info:
     - secure
     - auth
     - login
-    - credentials
     - account
+    - amazon
 
   matchers:
 
@@ -31,11 +31,6 @@ info:
     - pattern: "\\b(aws|amazon\\s*web\\s*services)\\b"
       type: body
       description: "Matches mentions of AWS or Amazon Web Services in the body of a phishing site"
-
-    - pattern: "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.(com|org|net|br)\\b"
-      type: body
-      description: "Matches email addresses in the body of an email"
-    
 
   tlds:
     - pattern: "(?:\\b\\w+\\.(?:space|online|work|xyz|com)\\b)"
