@@ -1,0 +1,42 @@
+info:
+
+  id: fas-keywords-banks
+  name: Brazilian Banks
+  author: Fabio Castro
+  description: List of names of Brazilian banks.
+
+  classification:
+    country: "Brazil"
+    tags:
+      - banks
+      - finance
+
+  references:
+  - Reports on Financial Fraud from the Central Bank of Brazil
+
+  keywords:
+    - bradesco
+    - santander
+    - itau
+    - aplicativo
+    - fatura
+    - habilitar
+    - token
+
+  matchers:
+
+    - pattern: "\\b(santander|bradesco|banking)\\b"
+      type: body
+      description: "Matches keywords related to banking and Brazilian banks"
+
+    - pattern: "\\b(chatbia-dist|lembrarAgCta)\\.js\\b"
+      type: body
+      description: "Matches JavaScript files with names chatbia-dist.js or lembrarAgCta.js"
+
+  tlds:
+    - pattern: "\\b\\w+\\.com|net|org|io|info|xyz|top|club|pw|tk|ga|ml|cf|gq|online|tech|site|link|bid|download|loan|digital\\b"
+      type: url
+      description: "Matches Brazilian TLDs"
+      
+  response:
+    - status_code: 200

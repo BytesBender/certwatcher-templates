@@ -19,15 +19,24 @@ info:
     - score
     - aumentar
     - positivo
-    - emprestimo
-    - financeira
     - assesoria
-    - consultoria
     - solucao
     - credito
 
+  matchers-condition: or
+
+  matchers:
+
+  - pattern: "\\b(aumentar|positivo|score|aumento|credito|simule|simulação|pontuação)\\b"
+    type: body
+    description: "Matches any occurrence of words related to credit score increase scams"
+
+  - pattern: "https:\\/\\/api.whatsapp.com\\/send\\/\\?phone="
+    type: body
+    description: "Matches URLs containing WhatsApp link with phone parameter"
+
   tlds:
-  - pattern: "(?:\\b\\w+\\.(?:com|br|gov)\\b)"
+  - pattern: "(?:\\b\\w+\\.(?:com|br)\\b)"
     type: url
     description: "Matches TLDs (Top-Level Domains)"
 
