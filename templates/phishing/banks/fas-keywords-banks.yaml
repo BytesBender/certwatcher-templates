@@ -17,19 +17,43 @@ info:
   keywords:
     - bradesco
     - santander
+    - nubank
+    - itau
+    - bancointer
+    - c6bank
+    - reativacao
+    - chave
+    - fatura
+    - pontos
+    - token
+    - empresaarial
+    - empresarial
+    - reativar
+    - seguranca
+    - acessotoken
+    - atualiza
+    - boleto
+    - segundavia
+    - unibanco
+    - 24horas
+    - livelo
+    - reativar
+    - clubedevantagens
+    - itaucard
+    - acumulados
+    - clientes
+    - sicred
+    - brbcard
+    - carditau
 
   matchers:
 
-    - pattern: "\\b(santander|bradesco|banking)\\b"
-      type: body
-      description: "Matches keywords related to banking and Brazilian banks"
-
-    - pattern: "\\b(chatbia-dist|lembrarAgCta)\\.js\\b"
-      type: body
-      description: "Matches JavaScript files with names chatbia-dist.js or lembrarAgCta.js"
+  - pattern: "\\b(santander|bradesco|nubank)\\b"
+    type: body
+    description: "Matches keywords related to banking and Brazilian banks"
 
   tlds:
-    - pattern: "\\b\\w+\\.com|net|org|io|info|xyz|top|club|pw|tk|ga|ml|cf|gq|online|tech|site|link|bid|download|loan|digital\\b"
+    - pattern: "\\b\\w+\\.com|net|org|io|info|xyz|top|club|pw|tk|ga|ml|cf|gq|online|tech|site|link|bid|download|loan|digital|app\\b"
       type: url
       description: "Matches Brazilian TLDs"
       
