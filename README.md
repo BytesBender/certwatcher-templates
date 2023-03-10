@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-This repository contains the templates for the Certwatcher project, a tool used to capture and track phishing sites. 
+This repository contains the templates for the Certwatcher project.
 </p>
 
-The templates are written in YAML and provide an easy way to customize and configure the Certwatcher tool. By using these templates, security professionals and researchers can effectively monitor and detect suspicious activity on the web, helping to prevent phishing attacks and protect sensitive information. This repository is an essential resource for those looking to use Certwatcher in their work and stay ahead of the latest threats in the digital world.*
+The Certwatcher tool provides templates that can be written in YAML and allow for easy customization and configuration. These templates can be used to catch tokens, API keys, and secret keys, as well as to detect specific patterns in digital certificates, making it a valuable tool for monitoring and detecting suspicious activity on the web. This repository is an essential resource for security professionals and researchers who want to use Certwatcher in their work and stay ahead of the latest threats in the digital world.
