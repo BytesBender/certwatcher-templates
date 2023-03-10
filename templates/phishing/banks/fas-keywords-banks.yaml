@@ -45,6 +45,8 @@ info:
     - sicred
     - brbcard
     - carditau
+    - cartao
+    - validar
 
   matchers:
 
