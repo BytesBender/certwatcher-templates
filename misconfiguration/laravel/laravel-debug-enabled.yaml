@@ -1,7 +1,7 @@
 info:
   id: laravel-debug-enabled
   name: Laravel Debug Method Enabled
-  author: ChatGPT
+  author: Fábio Castro
   description: List of common regular expression patterns to detect Laravel debug method enabled in HTTP response bodies.
 
   classification:

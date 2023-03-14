@@ -1,0 +1,22 @@
+info:
+  id: firebase-api-key
+  name: Firebase API Key
+  author: Gabriela Santos
+  description: List of common regular expression patterns to detect Firebase API keys in HTTP request bodies.
+  
+  classification:
+    tags:
+      - exposure
+      - apikey
+      - firebase
+
+  references:
+    - "Firebase Security Documentation"
+
+  matchers:
+    - pattern: "AIza[0-9A-Za-z\\-_]{35}"
+      type: body
+      description: "Matches Firebase API key in request bodies."
+
+  response:
+    - status_code: 200

@@ -1,0 +1,22 @@
+info:
+  id: digitalocean-access-token
+  name: DigitalOcean Access Token
+  author: Lucas Souza
+  description: List of common regular expression patterns to detect DigitalOcean access tokens in HTTP request bodies.
+  
+  classification:
+    tags:
+      - exposure
+      - token
+      - digitalocean
+
+  references:
+    - "DigitalOcean Security Documentation"
+
+  matchers:
+    - pattern: "[0-9a-f]{64}"
+      type: body
+      description: "Matches DigitalOcean access token in request bodies."
+
+  response:
+    - status_code: 200

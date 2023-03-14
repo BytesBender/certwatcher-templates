@@ -47,6 +47,7 @@ info:
     - carditau
     - cartao
     - validar
+    - habilitacao
 
   matchers:
 

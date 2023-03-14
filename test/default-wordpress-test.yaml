@@ -1,0 +1,24 @@
+info:
+  id: wordpress-sites
+  name: Wordpress Sites
+  author: Metols
+  description: List of regex patterns for identifying Wordpress sites.
+
+  classification:
+    tags:
+      - web
+      - cms
+      - wordpress
+
+  matchers:
+    - pattern: "\\b<meta name=\"generator\" content=\"WordPress\\b"
+      type: body
+      description: "Matches meta tag indicating the site is powered by Wordpress"
+    - pattern: "\\b(Powered by WordPress|Wordpress)\\b"
+      type: body
+      description: "Matches text indicating the site is powered by Wordpress"
+
+  tlds:
+    - pattern: "\\b\\w+\\.(com|org|net|biz|info|online|site|website)\\b"
+      type: url
+      description: "Matches TLDs commonly used by websites that may use Wordpress"
