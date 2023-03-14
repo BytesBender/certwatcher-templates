@@ -15,6 +15,9 @@
   <a href="#">
     <img src="https://img.shields.io/badge/version-v0.1.0-blue" alt="version">
   </a>
+ <a href="#">
+  <img src="https://github.com/drfabiocastro/certwatcher-templates/actions/workflows/templates.yml/badge.svg" alt="Template Validation" />
+ </a>
   <a href="https://twitter.com/drfabiocastro">
     <img src="https://img.shields.io/twitter/follow/drfabiocastro?style=social&logo=twitter" alt="follow on Twitter">
   </a>
