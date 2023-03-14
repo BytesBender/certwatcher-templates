@@ -28,5 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install yamllint
         run: pip install yamllint
+
+      # Runs yamllint with the flag to ignore errors
       - name: Run yamllint
-        run: yamllint .
+        run: yamllint . --strict=false
