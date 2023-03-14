@@ -3,20 +3,12 @@ info:
   name: Google Maps API Key
   author: Fábio Castro
   description: List of regex patterns for Google Maps API Keys.
-
+  severity: Low
   classification:
     tags:
-      - security
       - google
       - maps
       - api
-      - disclosure
-
-  keywords:
-    - maps
-    - api
-
-  matchers-condition: or
   
   matchers:
     - pattern: "AIza[0-9A-Za-z_-]{35}"

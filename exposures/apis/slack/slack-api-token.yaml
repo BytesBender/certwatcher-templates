@@ -3,7 +3,6 @@ info:
   name: Slack API Token
   author: Thomas
   description: List of common regular expression patterns to detect Slack API tokens in HTTP request bodies.
-
   classification:
     tags:
       - exposure

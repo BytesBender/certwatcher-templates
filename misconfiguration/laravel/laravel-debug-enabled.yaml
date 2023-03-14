@@ -3,7 +3,7 @@ info:
   name: Laravel Debug Method Enabled
   author: Fábio Castro
   description: List of common regular expression patterns to detect Laravel debug method enabled in HTTP response bodies.
-
+  severity: High
   classification:
     tags:
       - debug
@@ -12,7 +12,6 @@ info:
 
   references:
     - "Laravel Debugging documentation"
-
   matchers:
     - pattern: "(\\\\\\\\)?\\\\['debug'\\\\]\\\\s?=\\\\s?true"
       type: body
