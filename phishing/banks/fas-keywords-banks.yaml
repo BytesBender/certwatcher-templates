@@ -8,8 +8,10 @@ info:
     tags:
       - banks
       - finance
+      
   references:
   - Reports on Financial Fraud from the Central Bank of Brazil
+  
   keywords:
     - bradesco
     - santander
@@ -44,13 +46,16 @@ info:
     - cartao
     - validar
     - habilitacao
+
   matchers:
   - pattern: "\\b(santander|bradesco|nubank)\\b"
     type: body
     description: "Matches keywords related to banking and Brazilian banks"
+
   tlds:
     - pattern: "\\b\\w+\\.com|net|org|io|info|xyz|top|club|pw|tk|ga|ml|cf|gq|online|tech|site|link|bid|download|loan|digital|app\\b"
       type: url
       description: "Matches Brazilian TLDs"
+
   response:
     - status_code: 200

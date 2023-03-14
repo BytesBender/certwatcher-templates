@@ -3,9 +3,7 @@ info:
   name: Symfony Debugging Errors
   author: Fábio Castro
   description: List of common regular expression patterns to detect debugging errors in HTTP request bodies.
-
   severity: high
-
   classification:
     tags:
       - debug

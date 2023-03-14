@@ -12,6 +12,7 @@ info:
 
   references:
     - "Laravel Debugging documentation"
+  
   matchers:
     - pattern: "(\\\\\\\\)?\\\\['debug'\\\\]\\\\s?=\\\\s?true"
       type: body
