@@ -20,3 +20,6 @@ info:
     - pattern: "(var_dump|print_r)"
       type: body
       description: "Matches PHP dump functions in request bodies."
+      
+  response:
+    - status_code: 200

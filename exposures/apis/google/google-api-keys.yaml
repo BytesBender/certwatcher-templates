@@ -9,7 +9,7 @@ info:
       - google
       - maps
       - api
-  
+
   matchers:
     - pattern: "AIza[0-9A-Za-z_-]{35}"
       type: body

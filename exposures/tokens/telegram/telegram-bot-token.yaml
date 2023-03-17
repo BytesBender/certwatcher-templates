@@ -14,8 +14,9 @@ info:
   matcher-condition: any
 
   requests:
-    - method: GET
-      path: "/"
+      method: "GET"
+      path: 
+        - "/"
       description: Attempt to access the repository's main page
 
   matchers:

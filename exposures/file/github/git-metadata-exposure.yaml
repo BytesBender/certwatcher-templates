@@ -13,12 +13,6 @@ info:
 
   matcher-condition: or
 
-  keywords:
-    - git
-    - exposoure
-    - secure
-    - auth
-
   requests:
       method: GET
       path:

@@ -3,6 +3,7 @@ info:
   name: Firebase API Key
   author: Gabriela Santos
   description: List of common regular expression patterns to detect Firebase API keys in HTTP request bodies.
+  severity: Info
   classification:
     tags:
       - exposure

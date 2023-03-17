@@ -1,0 +1,47 @@
+info:
+  id: sensitive-env-file-disclosure
+  name: Sensitive Env File Disclosure
+  author: twitter/drfabiocastro
+  description: Template to detect Sensitive Env File Disclosure
+  severity: High
+  classification:
+    country: any
+    tags:
+      - security
+      - env
+      - configuration
+  matcher-condition: any
+  requests:
+    method: GET
+    path:
+      - "/.env"
+      - "/.env.*"
+      - "/config/.env"
+      - "/config/.env.*"
+      - "/configs/.env"
+      - "/configs/.env.*"
+      - "/conf/.env"
+      - "/conf/.env.*"
+      - "/configuration/.env"
+      - "/configuration/.env.*"
+      - "/settings/.env"
+      - "/settings/.env.*"
+      - "/private/.env"
+      - "/private/.env.*"
+      - "/secrets/.env"
+      - "/secrets/.env.*"
+    description: Attempt to access .env files
+    condition: or
+  matchers:
+    - pattern: "DB_USERNAME"
+      type: body
+      description: Database username found in the response body
+    - pattern: "DB_PASSWORD"
+      type: body
+      description: Database password found in the response body
+    - pattern: "APP_KEY"
+      type: body
+      description: Application key found in the response body
+  response:
+    - status_code: 200
+      description: Successful access to .env files.
