@@ -23,7 +23,7 @@ info:
       description: Matching APP_ variables found in response body
     - pattern: "(?m)^DB_(HOST|PASSWORD|DATABASE)"
       type: body
-      description: Matching DB_ variables found in response body
+      description: Matching DB_ variables found in response bodyresponse:
   response:
-    - status_code: 200
-      description: Successful access to Laravel sensitive data files.
+    - status: 
+      - 200

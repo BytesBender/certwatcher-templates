@@ -2,7 +2,7 @@ info:
   id: jenkins-crumb-token
   name: Jenkins exposed servers
   author: twitter/noexceptcpp
-  severity: info
+  severity: Info
   description: List of commons Jenkins Token or Crumb.
 
   classification:
@@ -21,4 +21,5 @@ info:
       description: "Commons Jenkins Token or Crumb."
       
   response:
-    - status_code: 200
+    - status: 
+      - 200

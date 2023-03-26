@@ -1,9 +1,9 @@
 info:
   id: git-metadata-exposure
   name: Git Metadata Directory Exposure
-  author: twitter/drfabiocastro
+  author: drfabiocastro
   description: Template to detect Git metadata directories exposed on web servers.
-  severity: medium
+  severity: Medium
   classification:
     country: any
     tags:
@@ -27,15 +27,14 @@ info:
   matchers:
     - pattern: "repository"
       type: body
-      description: Git repository description found in the response body
-    - pattern: "There isn't a GitHub Pages site here."
+      description: Git repository found in the response body
     - pattern: "refs/heads/master"
       type: body
-      description: Git repository description found in the response body
-    - pattern: "gh[us]_.{36}"
+      description: Git refs/heads/master found in the response body
+    - pattern: "^ghp_[a-zA-Z0-9]{30,50}$"
       type: body
-      description: Git repository description found in the response body
+      description: Git token found in the response body
 
   response:
-    - status_code: 200
-      description: Successful
+    - status: 
+      - 200

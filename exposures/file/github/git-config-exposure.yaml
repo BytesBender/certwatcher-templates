@@ -18,8 +18,7 @@ info:
       method: GET
       path:
         - "/.git/config"
-        - "/.git/HEAD"
-
+        
       description: Attempt to access Git configuration files
       condition: or
 
@@ -36,7 +35,8 @@ info:
     - pattern: "core.bare"
       type: body
       description: Git repository configuration found in the response body
+    - pattern: "^ghp_[a-zA-Z0-9]{30,50}$"
 
   response:
-    - status_code: 200
-      description: Successful
+    - status: 
+      - 200

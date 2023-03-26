@@ -3,6 +3,7 @@ info:
   name: Brazilian Banks
   author: Fabio Castro
   description: List of names of Brazilian banks.
+  severity: Low
   classification:
     country: "Brazil"
     tags:
@@ -46,16 +47,25 @@ info:
     - cartao
     - validar
     - habilitacao
+    - teste
+    - cloud
+    - login
+    - secure
+    - webmail
+    - webmail-login
+    - admin
 
   matchers:
-  - pattern: "\\b(santander|bradesco|nubank)\\b"
+  - pattern: "\\b(teste|api|key)\\b"
     type: body
     description: "Matches keywords related to banking and Brazilian banks"
 
   tlds:
-    - pattern: "\\b\\w+\\.com|net|org|io|info|xyz|top|club|pw|tk|ga|ml|cf|gq|online|tech|site|link|bid|download|loan|digital|app\\b"
+    - pattern: "\\b(com|br|net)\\b"
       type: url
       description: "Matches Brazilian TLDs"
 
   response:
-    - status_code: 200
+    - status: 
+      - 200
+      - 403

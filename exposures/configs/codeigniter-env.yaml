@@ -36,5 +36,6 @@ info:
       type: body
       description: DB_ configuration values found in the response body
   response:
-    - status_code: 200
+    - status: 
+      - 200
       description: Successful access to .env file(s).

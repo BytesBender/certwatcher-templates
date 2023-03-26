@@ -3,7 +3,7 @@ info:
   name: Laravel Debug Method Enabled
   author: Fábio Castro
   description: List of common regular expression patterns to detect Laravel debug method enabled in HTTP response bodies.
-  severity: High
+  severity: Medium
   classification:
     tags:
       - debug
@@ -20,6 +20,7 @@ info:
     - pattern: "Whoops! There was an error"
       type: body
       description: "Matches Laravel Whoops error message in request bodies."
-
+      
   response:
-    - status_code: 200
+    - status: 
+      - 200

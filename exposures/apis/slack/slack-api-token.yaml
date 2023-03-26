@@ -16,6 +16,6 @@ info:
     - pattern: "xoxp-[0-9A-Z]{10,}-[0-9A-Z]{10,}-[0-9A-Z]{30,}"
       type: body
       description: "Matches Slack API Token in request bodies."
-
   response:
-    - status_code: 200
+      - status: 
+        - 200

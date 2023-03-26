@@ -17,6 +17,6 @@ info:
     - pattern: "AIza[0-9A-Za-z\\-_]{35}"
       type: body
       description: "Matches Firebase API key in request bodies."
-
   response:
-    - status_code: 200
+    - status: 
+      - 200

@@ -25,7 +25,7 @@ info:
       type: body
       description: Firebase app script found in the response body
     - pattern: "Could not parse auth token"
-
   response:
-    - status_code: 200
+    - status: 
+      - 200
       description: Successful

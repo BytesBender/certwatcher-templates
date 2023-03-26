@@ -16,6 +16,7 @@ info:
     path:
       - "/.env"
       - "/.env.*"
+      - ".env.local"
       - "/config/.env"
       - "/config/.env.*"
       - "/configs/.env"
@@ -30,6 +31,7 @@ info:
       - "/private/.env.*"
       - "/secrets/.env"
       - "/secrets/.env.*"
+      - "env.$APP_ENV.local"
     description: Attempt to access .env files
     condition: or
   matchers:
@@ -42,6 +44,7 @@ info:
     - pattern: "APP_KEY"
       type: body
       description: Application key found in the response body
+      
   response:
-    - status_code: 200
-      description: Successful access to .env files.
+    - status: 
+      - 200

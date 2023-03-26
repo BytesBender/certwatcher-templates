@@ -3,7 +3,7 @@ info:
   name: Google Maps API Key
   author: Fábio Castro
   description: List of regex patterns for Google Maps API Keys.
-  severity: Low
+  severity: Info
   classification:
     tags:
       - google
@@ -14,11 +14,6 @@ info:
     - pattern: "AIza[0-9A-Za-z_-]{35}"
       type: body
       description: "Matches Google Maps API Key in request bodies"
-    - pattern: "AIza[0-9A-Za-z_-]{35}"
-      type: url
-      description: "Matches Google Maps API Key in URLs"
-  
-  tlds:
-    - pattern: "\\b\\w+\\.(com|org|net|biz|info|online|site|website|store|travel)\\b"
-      type: url
-      description: "Matches TLDs commonly used by websites that may use Google Maps API Key"
+  response:
+    - status: 
+      - 200
