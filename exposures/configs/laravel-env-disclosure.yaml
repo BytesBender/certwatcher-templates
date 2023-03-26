@@ -23,7 +23,7 @@ info:
       description: Matching APP_ variables found in response body
     - pattern: "(?m)^DB_(HOST|PASSWORD|DATABASE)"
       type: body
-      description: Matching DB_ variables found in response bodyresponse:
+      description: Matching DB_ variables found in response body
   response:
     - status: 
       - 200
