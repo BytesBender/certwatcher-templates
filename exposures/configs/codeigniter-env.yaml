@@ -10,7 +10,7 @@ info:
       - security
       - codeigniter
       - env-file-discovery
-  matcher-condition: any
+  matcher-condition: or
   requests:
     method: GET
     path:
@@ -38,4 +38,3 @@ info:
   response:
     - status: 
       - 200
-      description: Successful access to .env file(s).

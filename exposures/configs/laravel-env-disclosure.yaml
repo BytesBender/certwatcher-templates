@@ -10,7 +10,7 @@ info:
       - security
       - laravel
       - disclosure
-  matcher-condition: all
+  matcher-condition: or
   requests:
     method: GET
     path:

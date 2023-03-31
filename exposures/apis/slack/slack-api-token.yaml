@@ -11,6 +11,8 @@ info:
 
   references:
     - "Slack API documentation"
+    
+  matcher-condition: or
 
   matchers:
     - pattern: "xoxp-[0-9A-Z]{10,}-[0-9A-Z]{10,}-[0-9A-Z]{30,}"

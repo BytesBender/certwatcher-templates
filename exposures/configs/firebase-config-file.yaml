@@ -11,7 +11,7 @@ info:
       - configuration
       - sensitive information
 
-  matcher-condition: any
+  matcher-condition: or
 
   requests:
         method: GET
@@ -48,4 +48,3 @@ info:
   response:
     - status: 
       - 200
-      description: Successful response from Firebase server

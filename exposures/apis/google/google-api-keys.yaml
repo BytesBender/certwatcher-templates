@@ -10,6 +10,8 @@ info:
       - maps
       - api
 
+  matcher-condition: or
+
   matchers:
     - pattern: "AIza[0-9A-Za-z_-]{35}"
       type: body

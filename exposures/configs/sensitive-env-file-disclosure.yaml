@@ -10,7 +10,7 @@ info:
       - security
       - env
       - configuration
-  matcher-condition: any
+  matcher-condition: or
   requests:
     method: GET
     path:
