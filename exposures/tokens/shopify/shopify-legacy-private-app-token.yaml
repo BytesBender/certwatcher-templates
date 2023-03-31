@@ -12,7 +12,7 @@ info:
       - legacy
       - security
 
-  matcher-condition: any
+  matcher-condition: oor
 
   requests:
       method: GET

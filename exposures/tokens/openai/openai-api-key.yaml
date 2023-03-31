@@ -10,7 +10,7 @@ info:
       - openai
       - security
 
-  matcher-condition: any
+  matcher-condition: or
 
   requests:
       method: GET
