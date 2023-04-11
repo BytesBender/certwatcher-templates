@@ -25,15 +25,9 @@ info:
       condition: or
 
   matchers:
-    - pattern: "repository"
-      type: body
-      description: Git repository found in the response body
-    - pattern: "refs/heads/master"
-      type: body
-      description: Git refs/heads/master found in the response body
-    - pattern: "^ghp_[a-zA-Z0-9]{30,50}$"
-      type: body
-      description: Git token found in the response body
+  - pattern: "repositoryformatversion ="
+    type: body
+    description: Git repository configuration found in the response body
 
   response:
     - status: 

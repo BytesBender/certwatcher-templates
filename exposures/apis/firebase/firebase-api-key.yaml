@@ -1,24 +1,35 @@
 info:
-  id: firebase-api-key
-  name: Firebase API Key
-  author: Gabriela Santos
-  description: List of common regular expression patterns to detect Firebase API keys in HTTP request bodies.
+  id: firebase-api-secret-key
+  name: Firebase API Secret Key Exposure
+  author: OpenAI
+  description: Template to detect if an application is exposing a Firebase API secret key.
   severity: Info
   classification:
+    country: any
     tags:
-      - exposure
-      - apikey
       - firebase
-
-  references:
-    - "Firebase Security Documentation"
+      - api-secret-key
+      - security
 
   matcher-condition: or
-  
+
+  keywords:
+    - firebase
+
+  requests:
+      method: GET
+      path:
+        - "/"
+      description: Attempt to access the main page
+      condition: and
+
   matchers:
-    - pattern: "AIza[0-9A-Za-z\\-_]{35}"
+    - pattern: "^[0-9a-zA-Z_-]{28}$"
       type: body
-      description: "Matches Firebase API key in request bodies."
+      description: Firebase API secret found in the response body
+
   response:
     - status: 
       - 200
+      - 403
+      - 404

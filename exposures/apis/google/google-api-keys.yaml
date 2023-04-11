@@ -12,6 +12,14 @@ info:
 
   matcher-condition: or
 
+  
+  requests:
+      method: GET
+      path:
+        - "/"
+      description: Attempt to access the main page
+      condition: and
+
   matchers:
     - pattern: "AIza[0-9A-Za-z_-]{35}"
       type: body

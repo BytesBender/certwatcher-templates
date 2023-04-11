@@ -13,6 +13,15 @@ info:
   references:
     - "Symfony Dump Component documentation"
 
+  matcher-condition: or
+
+  requests:
+    method: GET
+    path:
+      - "/"
+    description: Attempt to access the main page
+    condition: and
+
   matchers:
     - pattern: "sf-dump-key"
       type: body

@@ -35,15 +35,12 @@ info:
     description: Attempt to access .env files
     condition: or
   matchers:
-    - pattern: "DB_USERNAME"
+    - pattern: "(?m)^APP_(NAME|ENV|KEY|DEBUG|URL|PASSWORD)"
       type: body
-      description: Database username found in the response body
-    - pattern: "DB_PASSWORD"
+      description: Matching APP_ variables found in response body
+    - pattern: "(?m)^DB_(HOST|PASSWORD|DATABASE)"
       type: body
-      description: Database password found in the response body
-    - pattern: "APP_KEY"
-      type: body
-      description: Application key found in the response body
+      description: Matching DB_ variables found in response body
       
   response:
     - status: 

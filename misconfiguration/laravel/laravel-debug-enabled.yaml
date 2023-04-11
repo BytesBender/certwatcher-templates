@@ -12,7 +12,16 @@ info:
 
   references:
     - "Laravel Debugging documentation"
-  
+
+  matcher-condition: or
+
+  requests:
+    method: GET
+    path:
+      - "/"
+    description: Attempt to access the main page
+    condition: and
+
   matchers:
     - pattern: "(\\\\\\\\)?\\\\['debug'\\\\]\\\\s?=\\\\s?true"
       type: body

@@ -22,7 +22,6 @@ info:
   requests:
       method: GET
       path:
-        - "/"
         - "/firebase-messaging-sw.js"
         - "/firebase-messaging.js"
       description: Attempt to access Firebase Messaging service endpoints

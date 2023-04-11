@@ -35,8 +35,7 @@ info:
     - pattern: "core.bare"
       type: body
       description: Git repository configuration found in the response body
-    - pattern: "^ghp_[a-zA-Z0-9]{30,50}$"
-
+      
   response:
     - status: 
       - 200

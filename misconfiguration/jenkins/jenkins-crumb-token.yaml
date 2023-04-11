@@ -15,6 +15,15 @@ info:
   references:
     - "https://www.jenkins.io/doc/book/security/csrf-protection/"
 
+  matcher-condition: or
+
+  requests:
+    method: GET
+    path:
+      - "/"
+    description: Attempt to access the main page
+    condition: and
+
   matchers:
     - pattern: "(?i)jenkins.{0,10}(?:crumb)?.{0,10}\b([0-9a-f]{32,36})\b"
       type: body

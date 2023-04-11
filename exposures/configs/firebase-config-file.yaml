@@ -11,12 +11,13 @@ info:
       - configuration
       - sensitive information
 
-  matcher-condition: or
+  matcher-condition: and
 
   requests:
         method: GET
         path: 
           - "/firebase.json"
+          - "/firebase_crediantial.json"
         description: Attempt to access the Firebase configuration file
 
   matchers:
